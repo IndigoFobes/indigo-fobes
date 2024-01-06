@@ -52,22 +52,22 @@ export interface Headshots {
 
 const headshots: Headshots[] = [
   {
-    src: "/Jacob_ main_hs.jpg",
+    src: "/Indigo-green-1.jpg",
     alt: "example",
     id: 0,
   },
   {
-    src: "/Jacob_hs_2.jpg",
+    src: "/Indigo-pink-headshot.jpg",
     alt: "example",
     id: 1,
   },
   {
-    src: "/Jacob_hs_5.jpg",
+    src: "/Indigo-Fobes-40-bright.jpg",
     alt: "example",
     id: 2,
   },
   {
-    src: "/Jacob_hs_4.jpg",
+    src: "/Indigo-green-3.jpg",
     alt: "example",
     id: 3,
   },
@@ -81,7 +81,7 @@ export default function Page() {
         <div className="flex flex-col sm:grid sm:grid-cols-2 w-full gap-5">
           {/* Headshots */}
           <motion.div
-            className="grid grid-cols-2 grid-rows-2 gap-4"
+            className="grid grid-cols-2 grid-rows-2 gap-x-4"
             initial="hide"
             whileInView="show"
             viewport={{ once: true }}
@@ -99,8 +99,8 @@ export default function Page() {
                       src={item.src}
                       alt={item.alt}
                       key={item.id}
-                      width={1000}
-                      height={500}
+                      width={500}
+                      height={1000}
                     />
                     <div
                       className="opacity-0 hover:opacity-100 absolute flex bg-black/80 top-0 left-0 w-full h-full justify-center"
@@ -122,15 +122,16 @@ export default function Page() {
             variants={resumeVariants}
           >
             <Image
-              src={"/JacobMillman-Resume.png"}
-              alt={"Jacob's resume"}
+              src={"/Indigo-fobes-resume.jpg"}
+              alt={"Indigo's resume"}
               width={1000}
               height={500}
+              className={"shadow-md"}
             />
             <div className="w-full h-full flex justify-center">
               <Link
-                className="bg-[var(--light-theme-color)] hover:bg-[var(--accent-color)] place-self-center w-full text-center py-2"
-                href={"JacobMillman-Resume.pdf"}
+                className="bg-[var(--dark-theme-color)] hover:bg-[var(--accent-color)] place-self-center w-full text-center py-2"
+                href={"Indigo-Fobes-Resume.pdf"}
                 download
                 target={"_blank"}
                 style={{ transition: "all 300ms ease-in-out" }}

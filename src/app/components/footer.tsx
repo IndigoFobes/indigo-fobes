@@ -45,19 +45,16 @@ export default function Footer() {
           <Link href={"https://www.instagram.com/"} target={"_blank"}>
             <FaInstagram />
           </Link>
-          <Link href={"https://www.facebook.com/"} target={"_blank"}>
-            <FaFacebook />
-          </Link>
         </div>
       </div>
       <div className="absolute flex flex-col top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 gap-5">
         <Link href="/" className="">
           <h4 className="text-center font-[600] font-mono text-xl md:text-2xl hover:cursor-pointer">
-            Jacob Millman
+            Indigo Fobes
           </h4>
         </Link>
         <div className="text-center text-xs xl:text-sm font-mono">
-          <p className="">Copyright 2023 Jacob A. Millman</p>
+          <p className="">Copyright 2023 Indigo M. Fobes</p>
           <p>Site designed and built by Indigo Fobes</p>
         </div>
       </div>
