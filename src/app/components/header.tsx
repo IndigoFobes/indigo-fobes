@@ -64,9 +64,7 @@ export default function Header() {
       <div className="menu-height flex w-screen place-items-end">
         <ul className="hidden w-full menu-item font-[500] md:grid grid-cols-5 text-[var(--light-text-color)] text-center pb-5 text-sm md:text-md lg:text-lg">
           {menuItems.map((item) => {
-            return item.hasOwnProperty("children") ? (
-              <MediaDropdown item={item} />
-            ) : (
+            return (
               <Link
                 className={`relative hover:text-[var(--accent-color)] place-self-center link-no-dec ${
                   item.route === path ? `` : `hover-underline-animation`
