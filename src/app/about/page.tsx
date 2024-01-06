@@ -59,38 +59,33 @@ export default function Page() {
           viewport={{ once: true }}
           variants={textVariants}
         >
-          A wonderful serenity has taken possession of my entire soul, like
-          these sweet mornings of spring which I enjoy with my whole heart. I am
-          alone, and feel the charm of existence in this spot, which was created
-          for the bliss of souls like mine. I am so happy, my dear friend, so
-          absorbed in the exquisite sense of mere tranquil existence, that I
-          neglect my talents. I should be incapable of drawing a single stroke
-          at the present moment; and yet I feel that I never was a greater
-          artist than now. When, while the lovely valley teems with vapour
-          around me, and the meridian sun strikes the upper surface of the
-          impenetrable foliage of my trees, and but a few stray gleams steal
-          into the inner sanctuary, I throw myself down among the tall grass by
-          the trickling stream; and, as I lie close to the earth, a thousand
-          unknown plants are noticed by me: when I hear the buzz of the little
-          world among the stalks, and grow familiar with the countless
-          indescribable forms of the insects and flies, then I feel the presence
-          of the Almighty, who formed us in his own image, and the breath. A
-          wonderful serenity has taken possession of my entire soul, like these
-          sweet mornings of spring which I enjoy with my whole heart. I am
-          alone, and feel the charm of existence in this spot, which was created
-          for the bliss of souls like mine. I am so happy, my dear friend, so
-          absorbed in the exquisite sense of mere tranquil existence, that I
-          neglect my talents. I should be incapable of drawing a single stroke
-          at the present moment; and yet I feel that I never was a greater
-          artist than now. When, while the lovely valley teems with vapour
-          around me, and the meridian sun strikes the upper surface of the
-          impenetrable foliage of my trees, and but a few stray gleams steal
-          into the inner sanctuary, I throw myself down among the tall grass by
-          the trickling stream; and, as I lie close to the earth, a thousand
-          unknown plants are noticed by me: when I hear the buzz of the little
-          world among the stalks, and grow familiar with the countless
-          indescribable forms of the insects and flies, then I feel the presence
-          of the Almighty, who formed us in his own image, and the breath
+          {`Jacob was born in Buffalo, NY in the sweltering month of August.
+          Always interested in acting, it wasn’t until he received numerous
+          accolades from his middle school film festival that he decided to
+          pursue it as a career. From that point on, Jacob was a force to be
+          reckoned with. If there was an opportunity to learn, he took it. He
+          was at every workshop, class, and audition possible. In 2021, he
+          graduated from SUNY Fredonia with a BFA in Acting with minors in Music
+          and Gender Studies. Jacob currently resides in Manhattan with his
+          plants and Legos.`}
+          {<br></br>}
+          {<br></br>}
+          {`Jacob’s main focus in his work is the character.
+          Their journey and relationships. Their hopes and dreams. From The
+          Pillowman to Singfeld!, he is able to be successful across many
+          genres. Jacob takes pride in his ability to understand and empathize
+          with people so different from him, and he is constantly pulling
+          inspiration from the outside world into his work.`}
+          {<br></br>}
+          {<br></br>}
+          {`A wise teacher once
+          told Jacob, “The best way to grow as an actor is by living your life
+          to the fullest,” which he embraced. Jacob loves to cook, box, and pet
+          dogs, although not always at the same time. His favorite places to be
+          are in a park or a movie theater. Jacob loves to spread positivity and
+          make people laugh, though sometimes he can be a real rascal (in a
+          totally safe, healthy, and marketable way). Maybe just a little prank
+          every now and again. Unless…?`}
         </motion.p>
       </div>
       <motion.div
@@ -114,37 +109,33 @@ export default function Page() {
         viewport={{ once: true }}
         variants={textVariants}
       >
-        A wonderful serenity has taken possession of my entire soul, like these
-        sweet mornings of spring which I enjoy with my whole heart. I am alone,
-        and feel the charm of existence in this spot, which was created for the
-        bliss of souls like mine. I am so happy, my dear friend, so absorbed in
-        the exquisite sense of mere tranquil existence, that I neglect my
-        talents. I should be incapable of drawing a single stroke at the present
-        moment; and yet I feel that I never was a greater artist than now. When,
-        while the lovely valley teems with vapour around me, and the meridian
-        sun strikes the upper surface of the impenetrable foliage of my trees,
-        and but a few stray gleams steal into the inner sanctuary, I throw
-        myself down among the tall grass by the trickling stream; and, as I lie
-        close to the earth, a thousand unknown plants are noticed by me: when I
-        hear the buzz of the little world among the stalks, and grow familiar
-        with the countless indescribable forms of the insects and flies, then I
-        feel the presence of the Almighty, who formed us in his own image, and
-        the breath. A wonderful serenity has taken possession of my entire soul,
-        like these sweet mornings of spring which I enjoy with my whole heart. I
-        am alone, and feel the charm of existence in this spot, which was
-        created for the bliss of souls like mine. I am so happy, my dear friend,
-        so absorbed in the exquisite sense of mere tranquil existence, that I
-        neglect my talents. I should be incapable of drawing a single stroke at
-        the present moment; and yet I feel that I never was a greater artist
-        than now. When, while the lovely valley teems with vapour around me, and
-        the meridian sun strikes the upper surface of the impenetrable foliage
-        of my trees, and but a few stray gleams steal into the inner sanctuary,
-        I throw myself down among the tall grass by the trickling stream; and,
-        as I lie close to the earth, a thousand unknown plants are noticed by
-        me: when I hear the buzz of the little world among the stalks, and grow
-        familiar with the countless indescribable forms of the insects and
-        flies, then I feel the presence of the Almighty, who formed us in his
-        own image, and the breath
+        {`Jacob was born in Buffalo, NY in the sweltering month of August.
+          Always interested in acting, it wasn’t until he received numerous
+          accolades from his middle school film festival that he decided to
+          pursue it as a career. From that point on, Jacob was a force to be
+          reckoned with. If there was an opportunity to learn, he took it. He
+          was at every workshop, class, and audition possible. In 2021, he
+          graduated from SUNY Fredonia with a BFA in Acting with minors in Music
+          and Gender Studies. Jacob currently resides in Manhattan with his
+          plants and Legos.`}
+        {<br></br>}
+        {<br></br>}
+        {`Jacob’s main focus in his work is the character.
+          Their journey and relationships. Their hopes and dreams. From The
+          Pillowman to Singfeld!, he is able to be successful across many
+          genres. Jacob takes pride in his ability to understand and empathize
+          with people so different from him, and he is constantly pulling
+          inspiration from the outside world into his work.`}
+        {<br></br>}
+        {<br></br>}
+        {`A wise teacher once
+          told Jacob, “The best way to grow as an actor is by living your life
+          to the fullest,” which he embraced. Jacob loves to cook, box, and pet
+          dogs, although not always at the same time. His favorite places to be
+          are in a park or a movie theater. Jacob loves to spread positivity and
+          make people laugh, though sometimes he can be a real rascal (in a
+          totally safe, healthy, and marketable way). Maybe just a little prank
+          every now and again. Unless…?`}
       </motion.p>
     </div>
   );

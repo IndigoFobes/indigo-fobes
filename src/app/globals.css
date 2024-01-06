@@ -7,12 +7,12 @@
 
 /* global variables */
 :root {
-  --dark-theme-color: rgb(0, 0, 0);
-  --light-theme-color: #202020;
-  --base-bg-color: #151515;  
-  --accent-color: #d1b657;
-  --dark-text-color: #151515;
-  --light-text-color: #F6F6F6;
+  --dark-theme-color: #F4F5FF;
+  --light-theme-color: #ffffff;
+  --base-bg-color: #ffffff;  
+  --accent-color: #e1c7e8;
+  --dark-text-color: #ffffff;
+  --light-text-color: #566CA6;
   --rounded-tiny: .1rem;
   --dark-theme-transparent: rgba(41, 41, 41, 0);
   --light-text-transparent: rgba(246, 246, 246, .5);
@@ -39,7 +39,7 @@ text-decoration: none;
 
 
 .header-bg {
-  background-image: linear-gradient( var(--dark-theme-color) 50%, var(--dark-theme-transparent));
+  background-color: var(--dark-theme-color)
 }
 
 .a-gradient {
@@ -55,9 +55,9 @@ text-decoration: none;
 }
 
 .contact-image {
-  background-image: url("/pillowman_featured.jpg");
+  background-image: url("/indigo-dance.PNG");
   background-size: cover;
-  background-position: center;
+  background-position: top;
   width: full;
 }
 
@@ -76,18 +76,19 @@ text-decoration: none;
 }
 
 .header-title {
-  font-size: 6.5rem;
-  font-family: "Manchester", serif;
-  font-style: italic;
+  font-size: 2.5rem;
+  font-weight: 700
+  /* font-family: "Manchester", serif;
+  font-style: italic; */
 }
 
 .horizontal-line-dark {
-  border-color: var(--light-theme-color);
+  border-color: var(--dark-theme-color);
   border-width: .07rem;
 }
 
 .horizontal-line-light {
-  border-color: var(--light-text-color);
+  border-color: var(--light-theme-color);
   border-width: .07rem;
 }
 
@@ -97,7 +98,7 @@ text-decoration: none;
 
 .title {
   font-size: 2.3rem;
-  font-weight: 600
+  font-weight: 700
   /* font-size: 6rem; */
   /* font-weight: 200; */
   /* font-family: "Manchester";
@@ -105,7 +106,7 @@ text-decoration: none;
 }
 
 .menu-height {
-  height: 11rem;
+  height: 9rem;
 }
 
 .footer-title {
@@ -175,7 +176,7 @@ text-decoration: none;
 }
 
 .verticalLine {
-  border-left: medium solid var(--light-text-color)
+  border-left: medium solid var(--dark-text-color)
 }
 
 /* .close-menu {

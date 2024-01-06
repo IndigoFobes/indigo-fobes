@@ -91,10 +91,10 @@ export default function Home() {
       <div className="font-mono font-[400] relative bg-[var(--light-theme-color)] flex flex-col md:grid grid-cols-7">
         <div className="md:relative col-start-1 col-end-8 md:min-h-[30rem] lg:min-h-[40rem] xl:min-h-[50rem] xl:max-h-[60rem] w-full">
           <Image
-            src="/Jacob_pillowman.jpg"
-            alt="Male placeholder"
+            src="/indigo-dance.PNG"
+            alt="Indigo Dancing"
             fill={true}
-            className="hidden md:flex object-cover"
+            className="hidden md:flex object-cover object-top"
           />
           {/* mobile */}
           <Image
@@ -110,28 +110,30 @@ export default function Home() {
         </div>
         <div className="col-start-1 col-end-8 flex flex-col justify-center content-center my-auto px-4 md:px-20 py-10 2xl:pr-60 bg-[var(--dark-theme-color)]">
           <h1 className=" text-[var(--light-text-color)] font-[300] text-md md:text-xl leading-normal mb-10 mx-8 md:mx-20 lg:mx-40 text-center">
-            Small paragraph about me. Something that will very clearly express
-            who I am as an{" "}
-            <span className="text-[var(--light-text-color)]">actor</span> and a{" "}
-            <span className="text-[var(--light-text-color)]">person</span>. Just
-            enough to make them want to read more and to show a bit of
-            personality.
+            Not a quote, but just a blurb about indigo,{" "}
+            <span className="text-[var(--light-text-color)] font-[600]">
+              her personality,{" "}
+            </span>
+            and more.
+            {/* <span className="text-[var(--light-text-color)] font-[500]">
+              actor
+            </span>{" "} */}
           </h1>
           <div className="flex justify-center">
             <Link
               className="font-[600] text-center bg-[var(--dark-theme-color)] my-2 mx-8 rounded-[var(--rounded-tiny)] text-lg text-[var(--light-text-color)] hover-underline-animation"
               href="/about"
             >
-              read more
+              read more about Indigo
             </Link>
           </div>
         </div>
       </div>
-      {/* What's New Section */}
-      <div className="p-4 flex flex-col a-gradient">
-        <div className="title py-12 px-8 md:px-12 lg:px-20 xl:px-36 w-full grid grid-cols-3">
+      {/* What's New / Most Recently Section */}
+      <div className="p-4 flex flex-col">
+        <div className="title pt-12 pb-6 px-8 md:px-12 lg:px-20 xl:px-36 w-full grid grid-cols-3">
           <h1 className="col-start-1 md:col-end-3 col-end-4">Most Recently</h1>
-          <hr className="col-start-1 md:col-end-3 col-end-4 md:mr-10 border-solid horizontal-line-dark mt-2"></hr>
+          {/* <hr className="col-start-1 md:col-end-3 col-end-4 md:mr-10 border-solid horizontal-line-dark mt-2"></hr> */}
         </div>
 
         <ul className="md:px-12 lg:px-20 xl:px-36 h-auto">
@@ -146,8 +148,8 @@ export default function Home() {
               variants={introPictureVariants}
             >
               <Image
-                src="/singfeld_3.jpg"
-                alt="Jacob in Singfeld"
+                src="/Indigo-cats-1.jpg"
+                alt="Indigo in Cats"
                 fill
                 className="object-cover"
               />
@@ -160,16 +162,12 @@ export default function Home() {
               viewport={{ once: true }}
               variants={introTextVariants}
             >
-              <h2 className="text-3xl md:text-4xl font-[500]">Singfeld</h2>
+              <h2 className="text-3xl md:text-4xl font-[500]">Cats</h2>
               <h3 className="text-2xl 2xl:text-3xl font-[400] mt-2 mb-4">
-                The Jerry Orbach Theatre
+                City Springs Theatre Company
               </h3>
               <p className="md:text-lg lg:text-xl 2xl:text-2xl font-[400] lg:w-10/12">
-                Jacob is so excited to be playing.... Just brief snippet of info
-                about upcoming or current plays. Jacob is so excited to be
-                playing.... Just brief snippet of info about upcoming or current
-                plays. Jacob is so excited to be playing.... Just brief snippet
-                of info about upcoming or current plays.
+                {`Indigo was recently Demeter in Cats, directed by Baayork Lee in Sandy Springs, Georgia.`}
               </p>
               <div className="place-self-start">
                 <Link
@@ -187,21 +185,20 @@ export default function Home() {
       {/* Quote section */}
       <div className="bg-[var(--dark-theme-color)] p-8 md:p-10">
         <p className="font-mono title text-[var(--light-text-color)] text-center lg:mx-20 my-5">
-          {`"Millman skillfully delivers a generous`}
-          <br className="hidden md:flex"></br>{" "}
-          {`dose of doubt and neuroses to George Costanza...”`}
-          <br></br> {`- Manhattan Digest`}
+          {`"Quote that I love from an author`}
+          <br className="hidden md:flex"></br> {`I love. Or a verse I love...”`}
+          <br></br> {`- The Bible`}
         </p>
       </div>
       {/* Image section */}
       <div className="h-screen">
         {/* Headshots section */}
-        <div className="grid grid-cols-10 b-gradient h-1/2">
+        <div className="grid grid-cols-10 h-1/2">
           {/* headshot */}
           <div className="col-start-1 col-end-6 md:col-end-4 w-full relative h-full">
             <Image
-              src="/Jacob_ main_hs.jpg"
-              alt="Jacob's face"
+              src="/Indigo-pink-headshot.jpg"
+              alt="Indigo's face"
               fill
               className="object-cover object-top"
             />
@@ -227,7 +224,7 @@ export default function Home() {
           </div>
         </div>
         {/* Production shot section */}
-        <div className="grid grid-cols-10 a-gradient h-1/2">
+        <div className="grid grid-cols-10 bg-[var(--dark-theme-color)] h-1/2">
           {/* text/link */}
           <div className="col-start-1 col-end-6 md:col-end-8 w-full flex flex-col gap-6 justify-center items-center mx-auto">
             <motion.h2
@@ -239,7 +236,7 @@ export default function Home() {
             >
               Media
             </motion.h2>
-            <hr className="w-3/4 xl:w-1/2 border-solid horizontal-line-dark mt-2"></hr>
+            <hr className="w-3/4 xl:w-1/2 border-solid horizontal-line-light mt-2"></hr>
             <Link
               className="font-[600] text-center my-2 mx-8 rounded-[var(--rounded-tiny)] text-lg text-[var(--light-text-color)] place-self-center hover-underline-animation"
               href="/media"
@@ -250,8 +247,8 @@ export default function Home() {
           {/* photo */}
           <div className="col-start-6 md:col-start-8 col-end-11 w-full relative h-full">
             <Image
-              src="/SFB_main.jpg"
-              alt="Male placeholder"
+              src="/Indigo-cats-2.jpg"
+              alt="Indigo Cats"
               fill
               className="object-cover"
             />
@@ -268,7 +265,7 @@ export default function Home() {
           <div className="py-2 px-1 rounded-md">
             <iframe
               className="rounded-sm w-[calc(1000px*1/3)] h-[calc(500px*1/3)] sm:w-[calc(1000px*1/2)] sm:h-[calc(500px*1/2)] md:w-[calc(1000px*2/3)] md:h-[calc(500px*2/3)] lg:w-[1000px] lg:h-[500px]"
-              src="https://www.youtube.com/embed/Sjf0SbpnHXI?si=5WVqpKRmrtaV1YCS"
+              src="https://www.youtube.com/embed/YbgaU1nXQHo?si=O7-pdBHZebCzTK2n"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -289,7 +286,7 @@ export default function Home() {
           <div className="p-10 h-full flex flex-col md:flex-row mx-auto my-20 max-w-[35rem] md:max-w-[60rem]">
             <div className="md:mr-10 mb-8 md:mb-0 md:h-72 lg:h-96 flex md:justify-end md:w-1/3">
               <motion.h2
-                className="font-[600] text-[3rem] text-[var(--light-text-color)]"
+                className="font-[600] text-[3rem] text-[var(--dark-text-color)]"
                 initial="hide"
                 whileInView="show"
                 viewport={{ once: true }}
@@ -308,15 +305,15 @@ export default function Home() {
                 viewport={{ once: true }}
                 variants={reachOutTextVariants}
               >
-                <h3 className="pt-2 pb-4 text-lg md:text-2xl font-[600] text-[var(--light-text-color)]">
+                <h3 className="pt-2 pb-4 text-lg md:text-2xl font-[600] text-[var(--dark-text-color)]">
                   (777)777-7777
                 </h3>
-                <h3 className="pb-8 text-lg md:text-2xl font-[600] text-[var(--light-text-color)]">
+                <h3 className="pb-8 text-lg md:text-2xl font-[600] text-[var(--dark-text-color)]">
                   jacobam*****@gmail.com
                 </h3>
                 <Link
-                  className="w-full md:w-3/4 mt-6 font-[600] text-center py-2 px-8 rounded-[var(--rounded-tiny)] text-lg text-[var(--light-text-color)] hover:bg-[var(--light-text-transparent)] hover:text-[var(--dark-text-color)] border-[var(--light-text-color)] border-2"
-                  href="mailto:jacobamillman@gmail.com"
+                  className="w-full md:w-3/4 mt-6 font-[600] text-center py-2 px-8 rounded-[var(--rounded-tiny)] text-lg text-[var(--dark-text-color)] hover:bg-[var(--light-text-transparent)] hover:text-[var(--light-text-color)] border-[var(--dark-text-color)] border-2"
+                  href="mailto:indigo.crandell@gmail.com"
                 >
                   Send an email
                 </Link>
