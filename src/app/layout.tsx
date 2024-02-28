@@ -13,6 +13,9 @@ import { AnimatePresence } from "framer-motion";
 // import fonts
 import { Poppins, La_Belle_Aurore, Raleway, Mulish } from "next/font/google";
 
+// import bootstrap
+import "bootstrap/dist/css/bootstrap.min.css";
+
 export const poppins = Poppins({
   subsets: ["latin"],
   display: "swap",
@@ -45,8 +48,8 @@ export const mulish = Mulish({
 });
 
 export const metadata: Metadata = {
-  title: "Jacob A. Millman",
-  description: "NYC based actor.",
+  title: "Indigo Fobes",
+  description: "NYC based actor, singer, dancer.",
 };
 
 export default function RootLayout({

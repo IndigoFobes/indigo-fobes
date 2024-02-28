@@ -42,7 +42,6 @@ const imageVariants: Variants = {
 export default function Page() {
   return (
     <div className="w-9/12 mx-auto pt-16 md:pt-48 mb-20 md:mb-32">
-      <h1 className="title pb-10 text-center md:text-start">About me</h1>
       {/* mobile */}
       <div className="md:hidden flex flex-col justify-center">
         <motion.div
@@ -59,33 +58,14 @@ export default function Page() {
           viewport={{ once: true }}
           variants={textVariants}
         >
-          {`Jacob was born in Buffalo, NY in the sweltering month of August.
-          Always interested in acting, it wasn’t until he received numerous
-          accolades from his middle school film festival that he decided to
-          pursue it as a career. From that point on, Jacob was a force to be
-          reckoned with. If there was an opportunity to learn, he took it. He
-          was at every workshop, class, and audition possible. In 2021, he
-          graduated from SUNY Fredonia with a BFA in Acting with minors in Music
-          and Gender Studies. Jacob currently resides in Manhattan with his
-          plants and Legos.`}
+          {`Indigo was born and raised in Alpharetta, Georgia. She’s the second of four kids, and she loves her family dearly. Indigo was – as a little gal – goofy, vivacious, curious, and imaginative. Though she often felt like she was in charge, she generally followed in the footsteps of her older brother, Chase, wherever he went and whatever he did. Thus, when Chase stepped into theatre at about 10 years old, little Indigo was keen to be a part of it. She practiced the dance moves on the side, longing to be in the same troupe her brother was in. A couple years later, she finally found herself in those same rehearsal rooms, working on her first “big kid” show: Children of Eden. She played young Abel, the first of many times Indigo would play a little boy (cue: Winthrop, Aladdin, and Pinnochio). Indigo fell in love with theatre and continued to watch her brother as they both stepped into more intense training and pursuit of performing. 
+          `}
           {<br></br>}
           {<br></br>}
-          {`Jacob’s main focus in his work is the character.
-          Their journey and relationships. Their hopes and dreams. From The
-          Pillowman to Singfeld!, he is able to be successful across many
-          genres. Jacob takes pride in his ability to understand and empathize
-          with people so different from him, and he is constantly pulling
-          inspiration from the outside world into his work.`}
+          {`Indigo is still goofy, vivacious, curious, and imaginative, but perhaps not as feisty as she was back in the day. She learned early on that she excelled in tap dancing and in committing fully to whatever character she was playing. She ended up beginning her pursuit of a BFA in Musical Theatre at Texas Christian University in 2017 and is extremely grateful for the four years she got to spend there. During those four years, she met some of her best friends, learned how to dig deeper into characters, realized she’s a SOPRANO, and got engaged to her best friend, James.`}
           {<br></br>}
           {<br></br>}
-          {`A wise teacher once
-          told Jacob, “The best way to grow as an actor is by living your life
-          to the fullest,” which he embraced. Jacob loves to cook, box, and pet
-          dogs, although not always at the same time. His favorite places to be
-          are in a park or a movie theater. Jacob loves to spread positivity and
-          make people laugh, though sometimes he can be a real rascal (in a
-          totally safe, healthy, and marketable way). Maybe just a little prank
-          every now and again. Unless…?`}
+          {`Indigo now lives in NYC with her husband James, both pursuing the arts. Her side hustle is building websites, a skill she learned before moving to NYC. When not designing or coding websites, Indigo can be found singing & dancing in her apartment, spending time with her sweet husband, baking bread, or jogging around Hudson Heights. Indigo loves her community at Church of the City, and The Hang, and is grateful to God for the friends that make NYC feel like home and for his love for her.`}
         </motion.p>
       </div>
       <motion.div
@@ -109,34 +89,74 @@ export default function Page() {
         viewport={{ once: true }}
         variants={textVariants}
       >
-        {`Jacob was born in Buffalo, NY in the sweltering month of August.
-          Always interested in acting, it wasn’t until he received numerous
-          accolades from his middle school film festival that he decided to
-          pursue it as a career. From that point on, Jacob was a force to be
-          reckoned with. If there was an opportunity to learn, he took it. He
-          was at every workshop, class, and audition possible. In 2021, he
-          graduated from SUNY Fredonia with a BFA in Acting with minors in Music
-          and Gender Studies. Jacob currently resides in Manhattan with his
-          plants and Legos.`}
+        {`Indigo was born and raised in Alpharetta, Georgia. She’s the second of four kids, and she loves her family dearly. Indigo was – as a little gal – goofy, vivacious, curious, and imaginative. Though she often felt like she was in charge, she generally followed in the footsteps of her older brother, Chase, wherever he went and whatever he did. Thus, when Chase stepped into theatre at about 10 years old, little Indigo was keen to be a part of it. She practiced the dance moves on the side, longing to be in the same troupe her brother was in. A couple years later, she finally found herself in those same rehearsal rooms, working on her first “big kid” show: Children of Eden. She played young Abel, the first of many times Indigo would play a little boy (cue: Winthrop, Aladdin, and Pinnochio). Indigo fell in love with theatre and continued to watch her brother as they both stepped into more intense training and pursuit of performing. 
+          `}
         {<br></br>}
         {<br></br>}
-        {`Jacob’s main focus in his work is the character.
-          Their journey and relationships. Their hopes and dreams. From The
-          Pillowman to Singfeld!, he is able to be successful across many
-          genres. Jacob takes pride in his ability to understand and empathize
-          with people so different from him, and he is constantly pulling
-          inspiration from the outside world into his work.`}
+        {`Indigo is still goofy, vivacious, curious, and imaginative, but perhaps not as feisty as she was back in the day. She learned early on that she excelled in tap dancing and in committing fully to whatever character she was playing. She ended up beginning her pursuit of a BFA in Musical Theatre at Texas Christian University in 2017 and is extremely grateful for the four years she got to spend there. During those four years, she met some of her best friends, learned how to dig deeper into characters, realized she’s a SOPRANO, and got engaged to her best friend, James.`}
         {<br></br>}
         {<br></br>}
-        {`A wise teacher once
-          told Jacob, “The best way to grow as an actor is by living your life
-          to the fullest,” which he embraced. Jacob loves to cook, box, and pet
-          dogs, although not always at the same time. His favorite places to be
-          are in a park or a movie theater. Jacob loves to spread positivity and
-          make people laugh, though sometimes he can be a real rascal (in a
-          totally safe, healthy, and marketable way). Maybe just a little prank
-          every now and again. Unless…?`}
+        {`Indigo now lives in NYC with her husband James, both pursuing the arts. Her side hustle is building websites, a skill she learned before moving to NYC. When not designing or coding websites, Indigo can be found singing & dancing in her apartment, spending time with her sweet husband, baking bread, or jogging around Hudson Heights. Indigo loves her community at Church of the City, and The Hang, and is grateful to God for the friends that make NYC feel like home and for his love for her.`}
       </motion.p>
+      {/* pics at bottom */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pt-10">
+        <div className="relative min-h-[20rem]">
+          <Image
+            src="/indigo-james.jpg"
+            alt="Indigo & James marriage!"
+            fill={true}
+            className="object-cover"
+          />
+          <div
+            className="opacity-[0] absolute flex bg-black/80 hover:opacity-100 top-0 left-0 w-full h-full justify-start"
+            style={{ transition: "opacity 300ms ease-in-out" }}
+          >
+            <h3 className="p-3 text-[1rem] text-slate-100/80">Text</h3>
+          </div>
+        </div>
+        <div className="relative min-h-[25rem]">
+          <Image
+            src="/indigo-running.jpg"
+            alt="Indigo running the GWB"
+            fill={true}
+            className="object-cover"
+          />
+          <div
+            className="opacity-[0] absolute flex bg-black/80 hover:opacity-100 top-0 left-0 w-full h-full justify-start"
+            style={{ transition: "opacity 300ms ease-in-out" }}
+          >
+            <h3 className="p-3 text-[1rem] text-slate-100/80">Text</h3>
+          </div>
+        </div>
+        <div className="relative min-h-[25rem]">
+          <Image
+            src="/indigo-cats-pumped.jpg"
+            alt="Indigo Cats"
+            fill={true}
+            className="object-cover"
+          />
+          <div
+            className="opacity-[0] absolute flex bg-black/80 hover:opacity-100 top-0 left-0 w-full h-full justify-start"
+            style={{ transition: "opacity 300ms ease-in-out" }}
+          >
+            <h3 className="p-3 text-[1rem] text-slate-100/80">Text</h3>
+          </div>
+        </div>
+        <div className="relative min-h-[25rem]">
+          <Image
+            src="/indigo-pool.jpg"
+            alt="Indigo by the pool"
+            fill={true}
+            className="object-cover"
+          />
+          <div
+            className="opacity-[0] absolute flex bg-black/80 hover:opacity-100 top-0 left-0 w-full h-full justify-start"
+            style={{ transition: "opacity 300ms ease-in-out" }}
+          >
+            <h3 className="p-3 text-[1rem] text-slate-100/80">Text</h3>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

@@ -55,14 +55,14 @@ export default function Header() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
     >
-      <div className="absolute flex justify-center top-0 w-screen text-center text-[var(--light-text-color)] pt-3 px-4 header-title">
+      <div className="absolute flex justify-center top-0 w-screen text-center text-[var(--light-text-color)] pt-3 lg:pt-8 px-4 header-title">
         <Link href="/" className="header-title link-no-dec">
           <h1>Indigo Fobes</h1>
         </Link>
       </div>
       {/* only visible on screens medium and larger */}
       <div className="menu-height flex w-screen place-items-end">
-        <ul className="hidden w-full menu-item font-[500] md:grid grid-cols-5 text-[var(--light-text-color)] text-center pb-5 text-sm md:text-md lg:text-lg">
+        <ul className="hidden w-full menu-item font-[500] md:grid grid-cols-5 text-[var(--light-text-color)] text-center pb-4 text-sm md:text-md lg:text-lg">
           {menuItems.map((item) => {
             return (
               <Link

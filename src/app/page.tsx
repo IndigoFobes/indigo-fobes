@@ -2,6 +2,8 @@
 import Header from "./components/header";
 import Image from "next/image";
 import Link from "next/link";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 import React, { useState } from "react";
 import {
   motion,
@@ -17,7 +19,7 @@ import { AnimatePresence } from "framer-motion";
 const introPictureVariants: Variants = {
   hide: {
     opacity: 0,
-    x: -500,
+    x: -200,
   },
   show: {
     opacity: 1,
@@ -31,7 +33,7 @@ const introPictureVariants: Variants = {
 const introTextVariants: Variants = {
   hide: {
     opacity: 0,
-    x: 500,
+    x: 200,
   },
   show: {
     opacity: 1,
@@ -89,20 +91,19 @@ export default function Home() {
     <div>
       {/* Hero section */}
       <div className="font-mono font-[400] relative bg-[var(--light-theme-color)] flex flex-col md:grid grid-cols-7">
-        <div className="md:relative col-start-1 col-end-8 md:min-h-[30rem] lg:min-h-[40rem] xl:min-h-[50rem] xl:max-h-[60rem] w-full">
+        <div className="relative col-start-1 col-end-8 min-h-[32rem] lg:min-h-[40rem] xl:min-h-[50rem] xl:max-h-[60rem] w-full">
           <Image
-            src="/indigo-dance.PNG"
-            alt="Indigo Dancing"
+            src="/indigo-cowgirl-hat.jpg"
+            alt="Indigo in a cowgirl hat, sitting in a garden"
             fill={true}
             className="hidden md:flex object-cover object-top"
           />
           {/* mobile */}
           <Image
-            src="/Jacob_pillowman.jpg"
-            alt="Male placeholder"
-            width={1000}
-            height={500}
-            className="md:hidden object-cover"
+            src="/indigo-cowgirl-hat.jpg"
+            alt="Indigo in a cowgirl hat, sitting in a garden"
+            fill={true}
+            className="flex md:hidden object-cover object-top"
           />
           {/* <div className="hidden md:flex absolute font-mono text-[1.5rem] lg:text-[2rem] xl:text-[3rem] bottom-[2rem] z-30 left-0 translate-x-10 -rotate-6 ">
             Jacob A. Millman
@@ -135,7 +136,6 @@ export default function Home() {
           <h1 className="col-start-1 md:col-end-3 col-end-4">Most Recently</h1>
           {/* <hr className="col-start-1 md:col-end-3 col-end-4 md:mr-10 border-solid horizontal-line-dark mt-2"></hr> */}
         </div>
-
         <ul className="md:px-12 lg:px-20 xl:px-36 h-auto">
           {/* first show */}
           <li className="flex flex-col md:grid md:grid-cols-5 pb-24">
@@ -156,7 +156,7 @@ export default function Home() {
             </motion.div>
             {/* text */}
             <motion.div
-              className="flex flex-col col-start-3 col-end-6 pl-10 mx-10 md:mx-0"
+              className="flex flex-col col-start-3 col-end-6 md:pl-10"
               initial="hide"
               whileInView="show"
               viewport={{ once: true }}
@@ -172,7 +172,7 @@ export default function Home() {
               <div className="place-self-start">
                 <Link
                   className="hover-underline-animation pt-6 md:pt-10 text-lg lg:text-xl font-[500] text-[var(--light-text-color)] hover:cursor-pointer"
-                  href="https://www.singfeld.com/"
+                  href="https://www.broadwayworld.com/atlanta/article/Review-CATS-IS-A-MEMORY-YOU-WONT-FORGET-at-City-Springs-Theatre-Company-20230507"
                   target="_blank"
                 >
                   get details
@@ -264,7 +264,7 @@ export default function Home() {
         <div className="bg-fixed flex flex-col items-center w-full relative">
           <div className="py-2 px-1 rounded-md">
             <iframe
-              className="rounded-sm w-[calc(1000px*1/3)] h-[calc(500px*1/3)] sm:w-[calc(1000px*1/2)] sm:h-[calc(500px*1/2)] md:w-[calc(1000px*2/3)] md:h-[calc(500px*2/3)] lg:w-[1000px] lg:h-[500px]"
+              className="rounded-sm w-[calc(1000px*2/5)] h-[calc(500px*2/5)] sm:w-[calc(1000px*1/2)] sm:h-[calc(500px*1/2)] md:w-[calc(1000px*2/3)] md:h-[calc(500px*2/3)] lg:w-[1000px] lg:h-[500px]"
               src="https://www.youtube.com/embed/YbgaU1nXQHo?si=O7-pdBHZebCzTK2n"
               title="YouTube video player"
               frameBorder="0"
@@ -282,9 +282,9 @@ export default function Home() {
       </div>
       {/* Contact section */}
       <div className="w-screen contact-image flex min-h-screen" id="contact">
-        <div className="image-overlay w-full">
+        <div className="image-overlay-pretty w-full">
           <div className="p-10 h-full flex flex-col md:flex-row mx-auto my-20 max-w-[35rem] md:max-w-[60rem]">
-            <div className="md:mr-10 mb-8 md:mb-0 md:h-72 lg:h-96 flex md:justify-end md:w-1/3">
+            {/* <div className="md:mr-10 mb-8 md:mb-0 md:h-72 lg:h-96 flex md:justify-end md:w-1/3">
               <motion.h2
                 className="font-[600] text-[3rem] text-[var(--dark-text-color)]"
                 initial="hide"
@@ -294,28 +294,78 @@ export default function Home() {
               >
                 Reach out
               </motion.h2>
-            </div>
+            </div> */}
             {/* vertical line */}
-            <div className="verticalLine h-3/4 hidden md:flex"></div>
+            {/* <div className="verticalLine h-3/4 hidden md:flex"></div> */}
             <div className="md:ml-8 md:place-self-start flex w-1/2">
               <motion.div
-                className="flex flex-col lg:mt-4"
+                className="flex flex-col ml-10 mt-4 md:ml-4 lg:mt-4 lg:ml-20 text-[var(--dark-text-color)] md:text-[var(--light-text-color)]"
                 initial="hide"
                 whileInView="show"
                 viewport={{ once: true }}
                 variants={reachOutTextVariants}
               >
-                <h3 className="pt-2 pb-4 text-lg md:text-2xl font-[600] text-[var(--dark-text-color)]">
-                  (777)777-7777
-                </h3>
-                <h3 className="pb-8 text-lg md:text-2xl font-[600] text-[var(--dark-text-color)]">
-                  jacobam*****@gmail.com
-                </h3>
+                <h2 className="text-[2.8rem] font-[700] mb-2">Reach out!</h2>
+                <hr className="w-3/4 xl:w-1/2 border-solid horizontal-line-accent mt-2 mb-12"></hr>
+                {/* email */}
+                <div className="pb-3">
+                  <Link
+                    href={"mailto:indigo.crandell@gmail.com"}
+                    target={"_blank"}
+                    className={"text-3xl flex flex-row"}
+                  >
+                    <MdEmail className="mr-2" />
+                    <h3 className="text-lg md:text-xl lg:text-2xl font-[600]">
+                      indigo.crandell@gmail.com
+                    </h3>
+                  </Link>
+                </div>
+                {/* instagram */}
+                <div className="pb-3">
+                  <Link
+                    href={" https://www.instagram.com/jacob.millman/"}
+                    target={"_blank"}
+                    className={"text-3xl flex flex-row"}
+                  >
+                    <FaInstagram className="mr-2" />
+                    <h3 className="text-lg md:text-xl lg:text-2xl font-[600]">
+                      instagram
+                    </h3>
+                  </Link>
+                </div>
+                {/* actors access */}
+                <div className="pb-8 flex flex-row">
+                  <Link
+                    href={"https://resumes.actorsaccess.com/jacobmillman"}
+                    target={"_blank"}
+                    className={"flex flex-row"}
+                  >
+                    <Image
+                      src={"/actors_access-blue.png"}
+                      alt={"Actors Access Icon"}
+                      width={30}
+                      height={30}
+                      className={"mr-2 hidden md:flex"}
+                    ></Image>
+                    <Image
+                      src={"/actors_access-white-blue.png"}
+                      alt={"Actors Access Icon"}
+                      width={30}
+                      height={30}
+                      className={"mr-2 md:hidden"}
+                    ></Image>
+                    <h3 className="text-lg md:text-xl lg:text-2xl font-[600]">
+                      actors access
+                    </h3>
+                  </Link>
+                </div>
+
                 <Link
-                  className="w-full md:w-3/4 mt-6 font-[600] text-center py-2 px-8 rounded-[var(--rounded-tiny)] text-lg text-[var(--dark-text-color)] hover:bg-[var(--light-text-transparent)] hover:text-[var(--light-text-color)] border-[var(--dark-text-color)] border-2"
+                  className="min-w-[180px] mt-6 font-[600] place-self-start text-center py-2 px-8 rounded-[var(--rounded-tiny)] text-lg hover:bg-[var(--light-text-color)] hover:text-[var(--accent-color)] border-[var(--dark-text-color)] hover:border-[var(--light-text-color)] md:border-[var(--light-text-color)] border-2"
                   href="mailto:indigo.crandell@gmail.com"
+                  style={{ transition: "all 300ms ease-in-out" }}
                 >
-                  Send an email
+                  Send an Email
                 </Link>
               </motion.div>
             </div>

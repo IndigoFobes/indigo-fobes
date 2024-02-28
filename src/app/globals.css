@@ -92,8 +92,17 @@ text-decoration: none;
   border-width: .07rem;
 }
 
+.horizontal-line-accent {
+  border-color: var(--light-text-color);
+  border-width: .07rem;
+}
+
 .image-overlay {
   background-color: rgba(23, 23, 23, 0.6);
+}
+
+.image-overlay-pretty {
+  background-color: rgba(225, 199, 232, 0.50)
 }
 
 .title {
@@ -118,7 +127,7 @@ text-decoration: none;
 /* Media Query for md screen */
 @media screen and (max-width: 1024px) {
   .header-title {
-    font-size: 5rem
+    font-size: 2.3rem
   }
   
   .title {
@@ -126,14 +135,14 @@ text-decoration: none;
   }
 
   .menu-height {
-    height: 9rem
+    height: 7rem
   }
 }
 
 /* Media Query for sm screen */
 @media screen and (max-width: 768px) {
   .header-title {
-    font-size: 3rem
+    font-size: 2.3rem
   }
 
   .title {
@@ -144,7 +153,7 @@ text-decoration: none;
 /* Media Query for xs screen */
 @media screen and (max-width: 640px) {
   .header-title {
-    font-size: 2.4rem
+    font-size: 2.1rem
   }
 
   .title {

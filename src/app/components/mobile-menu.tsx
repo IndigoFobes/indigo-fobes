@@ -49,7 +49,7 @@ export default function MobileDropdown() {
         <header className="font-mono w-full bg-[var(--dark-theme-color)] grid grid-cols-5 md:flex md:flex-col justify-center">
           <Link href="/" className="col-start-2 col-end-5">
             <h1 className="font-[300] text-center text-[var(--light-text-color)] py-3 px-4 header-title">
-              Jacob Millman
+              Indigo Fobes
             </h1>
           </Link>
           <div className="md:hidden text-[var(--light-text-color)] flex justify-center place-items-center">

@@ -53,7 +53,7 @@ export interface Headshots {
 const headshots: Headshots[] = [
   {
     src: "/Indigo-green-1.jpg",
-    alt: "example",
+    alt: "Indigo smiling in green shirt.",
     id: 0,
   },
   {
@@ -103,7 +103,7 @@ export default function Page() {
                       height={1000}
                     />
                     <div
-                      className="opacity-0 hover:opacity-100 absolute flex bg-black/80 top-0 left-0 w-full h-full justify-center"
+                      className="opacity-[0] absolute flex bg-black/80 hover:opacity-100 top-0 left-0 w-full h-full justify-center"
                       style={{ transition: "opacity 300ms ease-in-out" }}
                     >
                       <AiOutlineDownload className="place-self-center text-[4rem] text-slate-100/80" />
