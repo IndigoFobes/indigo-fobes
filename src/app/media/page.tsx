@@ -178,33 +178,33 @@ const shows: Shows[] = [
 const buttons: Buttons[] = [
   {
     id: 1,
-    title: "Dramatic Reel",
+    title: "Dance Reel",
   },
   {
     id: 2,
-    title: "Comedic Reel",
+    title: "Do I Hear a Waltz?",
   },
   {
     id: 3,
-    title: "Performace Clips",
+    title: "Macavity",
   },
 ];
 
 const videos: Videos[] = [
   {
     id: 1,
-    src: "https://www.youtube.com/embed/Sjf0SbpnHXI?si=5WVqpKRmrtaV1YCS",
-    alt: "Morning Person – Shrek",
+    src: "https://www.youtube.com/embed/YbgaU1nXQHo?si=2FwVn8lW39h3q2le",
+    alt: "Dance Reel",
   },
   {
     id: 2,
-    src: "https://www.youtube.com/embed/lB0VLzzSxcU?si=Wna_UX6s9Njs6zSZ",
-    alt: "What's Up Duloc",
+    src: "https://www.youtube.com/embed/vnWLksg4E9o?si=Prp4p-oPrEmL6Gcx",
+    alt: "Do I Hear a Waltz?",
   },
   {
     id: 3,
-    src: "https://www.youtube.com/embed/3sPuuMg9G0Y?si=n4XEYAWO22zLgCJ7",
-    alt: "Who I'd Be",
+    src: "https://www.youtube.com/embed/yombw1LuHfk?si=n9fPEr9cq0eB-N2D",
+    alt: "Macavity",
   },
 ];
 
@@ -218,14 +218,13 @@ export default function Page() {
     setRendered(e.target.value);
   }
 
-  const [rendered, setRendered] = useState(0);
+  const [rendered, setRendered] = useState(1);
 
   let source;
   let title;
   let id;
 
-  if (rendered == 0) {
-  } else if (rendered == 1) {
+  if (rendered == 1) {
     source = videos[0].src;
     title = videos[0].alt;
     id = videos[0].id;

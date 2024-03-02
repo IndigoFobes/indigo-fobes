@@ -153,7 +153,10 @@ export default function Page() {
             className="opacity-[0] absolute flex bg-black/80 hover:opacity-100 top-0 left-0 w-full h-full justify-start"
             style={{ transition: "opacity 300ms ease-in-out" }}
           >
-            <h3 className="p-3 text-[1rem] text-slate-100/80">Text</h3>
+            <h3 className="p-3 text-[1rem] text-slate-100/80">
+              Just chilling by the pool in Florida, at my husband's
+              grandparent's best friends' house.
+            </h3>
           </div>
         </div>
       </div>
