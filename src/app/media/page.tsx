@@ -2,8 +2,8 @@
 import Header from "../components/header";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
-// import "bootstrap/dist/css/bootstrap.min.css";
-import BootstrapCarousel from "../components/carousel";
+// // import "bootstrap/dist/css/bootstrap.min.css";
+// import BootstrapCarousel from "../components/carousel";
 import "../../../src/app/globals.css";
 import {
   motion,
@@ -14,6 +14,7 @@ import {
   useMotionValue,
   Variants,
 } from "framer-motion";
+import ImageSlideshow from "../components/swiper";
 
 // Variants for animations
 const titleVariants: Variants = {
@@ -79,7 +80,7 @@ export interface Videos {
 const shows: Shows[] = [
   {
     id: 0,
-    title: "Stupid F**king Bird",
+    title: "Cats",
     photos: {
       a: {
         id: 1,
@@ -103,7 +104,7 @@ const shows: Shows[] = [
   },
   {
     id: 1,
-    title: "Our Town",
+    title: "Romeo & Juliet",
     photos: {
       a: {
         id: 1,
@@ -127,7 +128,7 @@ const shows: Shows[] = [
   },
   {
     id: 2,
-    title: "Singfeld",
+    title: "Children of Eden",
     photos: {
       a: {
         id: 1,
@@ -151,7 +152,7 @@ const shows: Shows[] = [
   },
   {
     id: 3,
-    title: "The Pillowman",
+    title: "Other",
     photos: {
       a: {
         id: 1,
@@ -266,7 +267,7 @@ export default function Page() {
   // ***RENDERED***
   return (
     <div className="lg:w-9/12 mx-8 sm:mx-auto sm:px-8 pt-16 md:pt-48 mb-20 md:mb-32">
-      <div className="flex flex-col gap-6 mt-5">
+      <div className="flex flex-col mt-5">
         {/* Videos section */}
         <div className="flex flex-col justify-center content-center mb-10">
           <motion.h1
@@ -278,7 +279,7 @@ export default function Page() {
           >
             Videos
           </motion.h1>
-          <hr className="w-3/4 border-solid mt-4 place-self-center horizontal-line-light mb-8"></hr>
+          <hr className="w-3/4 border-solid mt-4 place-self-center horizontal-line-accent mb-8"></hr>
           <div className="lg:row-span-4">
             <motion.div
               className="py-2 px-1 rounded-md flex justify-center"
@@ -321,7 +322,7 @@ export default function Page() {
           </button> */}
         </div>
         {/* Production photos section */}
-        <div className="flex flex-col justify-center content-center">
+        <div className="flex flex-col justify-center mt-8 md:mt-20 content-center">
           <motion.h1
             className="title text-center"
             initial="hide"
@@ -331,14 +332,14 @@ export default function Page() {
           >
             Production Photos
           </motion.h1>
-          <hr className="w-3/4 border-solid mt-4 place-self-center horizontal-line-light mb-2"></hr>
+          <hr className="w-full md:w-3/4 border-solid mt-4 place-self-center horizontal-line-accent mb-2"></hr>
         </div>
         {/* map through each show, with photos from each show. I can either create new interfaces with photos nested into shows. I don't know another good option. */}
         {shows.map((show) => {
           return (
-            <div>
+            <div className="w-full md:w-3/4 flex flex-col self-center">
               <motion.h2
-                className="text-[2rem] py-4"
+                className="text-[2rem] py-4 flex"
                 initial="hide"
                 whileInView="show"
                 viewport={{ once: true }}
@@ -346,7 +347,8 @@ export default function Page() {
               >
                 {show.title}
               </motion.h2>
-              <BootstrapCarousel show={show} key={show.id} />
+              {/* <BootstrapCarousel show={show} key={show.id} /> */}
+              <ImageSlideshow show={show} key={show.id} />
             </div>
           );
         })}

@@ -114,6 +114,10 @@ text-decoration: none;
   font-style: italic */
 }
 
+.slide-height {
+  height: 500px
+}
+
 .menu-height {
   height: 9rem;
 }
@@ -136,6 +140,10 @@ text-decoration: none;
 
   .menu-height {
     height: 7rem
+  }
+
+  .slide-height {
+    height: 450px
   }
 }
 
