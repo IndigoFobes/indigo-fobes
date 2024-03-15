@@ -110,7 +110,7 @@ export default function Home() {
           </div> */}
         </div>
         <div className="col-start-1 col-end-8 flex flex-col justify-center content-center my-auto px-4 md:px-20 py-10 2xl:pr-60 bg-[var(--dark-theme-color)]">
-          <h1 className=" text-[var(--light-text-color)] font-[300] text-md md:text-xl leading-normal mb-10 mx-8 md:mx-20 lg:mx-40 text-center">
+          <h1 className=" text-[var(--light-text-color)] font-[300] text-lg md:text-xl leading-normal mb-10 mx-8 md:mx-20 lg:mx-40 text-center">
             Grounded, joyful,{" "}
             <span className="text-[var(--light-text-color)] font-[300]">
               expressive,{" "}

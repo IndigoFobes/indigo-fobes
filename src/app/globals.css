@@ -18,6 +18,15 @@
   --light-text-transparent: rgba(246, 246, 246, .5);
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  position: relative
+}
+
 
 @font-face {
   font-family: "Manchester";
