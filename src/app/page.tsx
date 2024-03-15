@@ -111,11 +111,11 @@ export default function Home() {
         </div>
         <div className="col-start-1 col-end-8 flex flex-col justify-center content-center my-auto px-4 md:px-20 py-10 2xl:pr-60 bg-[var(--dark-theme-color)]">
           <h1 className=" text-[var(--light-text-color)] font-[300] text-md md:text-xl leading-normal mb-10 mx-8 md:mx-20 lg:mx-40 text-center">
-            Not a quote, but just a blurb about indigo,{" "}
-            <span className="text-[var(--light-text-color)] font-[600]">
-              her personality,{" "}
+            Grounded, joyful,{" "}
+            <span className="text-[var(--light-text-color)] font-[300]">
+              expressive,{" "}
             </span>
-            and more.
+            imaginative, and tappy.
             {/* <span className="text-[var(--light-text-color)] font-[500]">
               actor
             </span>{" "} */}
@@ -184,10 +184,10 @@ export default function Home() {
       </div>
       {/* Quote section */}
       <div className="bg-[var(--dark-theme-color)] p-8 md:p-10">
-        <p className="font-mono title text-[var(--light-text-color)] text-center lg:mx-20 my-5">
-          {`"Quote that I love from an author`}
-          <br className="hidden md:flex"></br> {`I love. Or a verse I love...”`}
-          <br></br> {`- The Bible`}
+        <p className="font-mono text-[var(--light-text-color)] text-center lg:mx-20 my-5 verse">
+          {`"Whatever is true, noble, right, pure, lovely, admirable – if anything is excellent or praiseworthy – think about such things."`}
+          <br></br>
+          <span className=" ">{`Philippians 4:8`}</span>
         </p>
       </div>
       {/* Image section */}

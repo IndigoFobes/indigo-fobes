@@ -128,6 +128,10 @@ text-decoration: none;
   font-style: italic;
 }
 
+.verse {
+  font-size: 1.8rem;
+}
+
 /* Media Query for md screen */
 @media screen and (max-width: 1024px) {
   .header-title {
@@ -145,6 +149,10 @@ text-decoration: none;
   .slide-height {
     height: 450px
   }
+
+  .verse {
+    font-size: 1.6rem;
+  }
 }
 
 /* Media Query for sm screen */
@@ -155,6 +163,10 @@ text-decoration: none;
 
   .title {
     font-size: 1.9rem
+  }
+
+  .verse {
+    font-size: 1.4rem;
   }
 }
 

@@ -108,10 +108,10 @@ export default function Page() {
             className="object-cover"
           />
           <div
-            className="opacity-[0] absolute flex bg-[#e1c7e8]/50 hover:opacity-100 top-0 left-0 w-full h-full justify-start"
+            className="opacity-[0] absolute flex  bg-black/70 hover:opacity-100 top-0 left-0 w-full h-full justify-start"
             style={{ transition: "opacity 300ms ease-in-out" }}
           >
-            <h3 className="p-3 text-[1rem] text-gray-700">The best day.</h3>
+            <h3 className="p-3 text-[1rem] text-white">The best day.</h3>
           </div>
         </div>
         <div className="relative min-h-[25rem]">
@@ -122,10 +122,10 @@ export default function Page() {
             className="object-cover"
           />
           <div
-            className="opacity-[0] absolute flex bg-[#e1c7e8]/50 hover:opacity-100 top-0 left-0 w-full h-full justify-start"
+            className="opacity-[0] absolute flex  bg-black/70 hover:opacity-100 top-0 left-0 w-full h-full justify-start"
             style={{ transition: "opacity 300ms ease-in-out" }}
           >
-            <h3 className="p-3 text-[1rem] text-gray-700">
+            <h3 className="p-3 text-[1rem] text-white">
               Running the GWB, smiling at James!
             </h3>
           </div>
@@ -138,11 +138,11 @@ export default function Page() {
             className="object-cover"
           />
           <div
-            className="opacity-[0] absolute flex bg-[#e1c7e8]/50 hover:opacity-100 top-0 left-0 w-full h-full justify-start"
+            className="opacity-[0] absolute flex  bg-black/70 hover:opacity-100 top-0 left-0 w-full h-full justify-start"
             style={{ transition: "opacity 300ms ease-in-out" }}
           >
-            <h3 className="p-3 text-[1rem] text-gray-700">
-              Pre-show. Just feelin' jazzed.
+            <h3 className="p-3 text-[1rem] text-white">
+              Pre-show. Feelin' jazzed for the Jellicle Ball of course.
             </h3>
           </div>
         </div>
@@ -154,12 +154,12 @@ export default function Page() {
             className="object-cover"
           />
           <div
-            className="opacity-[0] absolute flex bg-[#e1c7e8]/50 hover:opacity-100 top-0 left-0 w-full h-full justify-start"
+            className="opacity-[0] absolute flex bg-black/70 hover:opacity-100 top-0 left-0 w-full h-full justify-start"
             style={{ transition: "opacity 300ms ease-in-out" }}
           >
-            <h3 className="p-3 text-[1rem] text-gray-700">
+            <h3 className="p-3 text-[1rem] text-white">
               Just chilling by the pool in Florida, at my husband's
-              grandparent's best friends' house.
+              grandparents' best friends' house.
             </h3>
           </div>
         </div>
