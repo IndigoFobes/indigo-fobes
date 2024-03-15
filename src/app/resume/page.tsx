@@ -81,7 +81,7 @@ export default function Page() {
         <div className="flex flex-col sm:grid sm:grid-cols-2 w-full gap-5">
           {/* Headshots */}
           <motion.div
-            className="grid grid-cols-2 grid-rows-2 gap-x-4"
+            className="grid grid-cols-2 grid-rows-2 gap-4 h-min"
             initial="hide"
             whileInView="show"
             viewport={{ once: true }}
@@ -93,7 +93,13 @@ export default function Page() {
           <div>headshots</div> */}
             {headshots.map((item) => {
               return (
-                <Link key={item.id} href={item.src} download target={"_blank"}>
+                <Link
+                  key={item.id}
+                  href={item.src}
+                  download
+                  target={"_blank"}
+                  className="h-min"
+                >
                   <div className="relative">
                     <Image
                       src={item.src}
