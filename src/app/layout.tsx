@@ -47,6 +47,9 @@ export const mulish = Mulish({
 export const metadata: Metadata = {
   title: "Indigo Fobes",
   description: "NYC based actor, singer, dancer.",
+  icons: {
+    icon: "/IF-favicon.png",
+  },
 };
 
 export default function RootLayout({
