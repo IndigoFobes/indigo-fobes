@@ -84,21 +84,39 @@ const shows: Shows[] = [
     photos: {
       a: {
         id: 1,
-        title: "Stupid F**king Bird",
-        src: "/sfb_1.jpg",
-        alt: "Stupid F**king Bird",
+        title: "Macavity",
+        src: "/Indigo-cats-5.jpg",
+        alt: "Indigo as Demeter in Cats, Macavity song",
       },
       b: {
         id: 2,
-        title: "Stupid F**king Bird",
-        src: "/sfb_2.jpg",
-        alt: "Stupid F**king Bird",
+        title: "Macavity",
+        src: "/Indigo-cats-2.jpg",
+        alt: "Indigo as Demeter in Cats, with Bombalurina; Macavity song",
       },
       c: {
         id: 3,
-        title: "Stupid F**king Bird",
-        src: "/SFB_main-cropped.jpg",
-        alt: "Stupid F**king Bird",
+        title: "Cats",
+        src: "/Indigo-cats-1.jpg",
+        alt: "Cats",
+      },
+      d: {
+        id: 4,
+        title: "Cats",
+        src: "/Indigo-cats-4.jpg",
+        alt: "Cats",
+      },
+      e: {
+        id: 5,
+        title: "Cats",
+        src: "/Indigo-cats-6.jpg",
+        alt: "Cats",
+      },
+      f: {
+        id: 6,
+        title: "Cats",
+        src: "/Indigo-cats-8.jpg",
+        alt: "Cats",
       },
     },
   },
@@ -108,69 +126,39 @@ const shows: Shows[] = [
     photos: {
       a: {
         id: 1,
-        title: "Our Town",
-        src: "/our-town_1.JPG",
-        alt: "Our Town",
+        title: "Romeo & Juliet",
+        src: "/Romeo&Juliet-1.jpg",
+        alt: "Romeo & Juliet",
       },
       b: {
         id: 2,
-        title: "Our Town",
-        src: "/our-town_1.JPG",
-        alt: "Our Town",
+        title: "Romeo & Juliet",
+        src: "/Romeo&Juliet-8.jpg",
+        alt: "Romeo & Juliet",
       },
       c: {
         id: 3,
-        title: "Our Town",
-        src: "/our-town_1.JPG",
-        alt: "Our Town",
+        title: "Romeo & Juliet",
+        src: "/Romeo&Juliet-2.jpg",
+        alt: "Romeo & Juliet",
       },
-    },
-  },
-  {
-    id: 2,
-    title: "Children of Eden",
-    photos: {
-      a: {
-        id: 1,
-        title: "Singfeld, 2023",
-        src: "/singfeld_1.jpg",
-        alt: "Singfeld, 2023",
+      d: {
+        id: 4,
+        title: "Romeo & Juliet",
+        src: "/Romeo&Juliet-6.jpg",
+        alt: "Romeo & Juliet",
       },
-      b: {
-        id: 2,
-        title: "Singfeld, 2023",
-        src: "/singfeld_1.jpg",
-        alt: "Singfeld, 2023",
+      e: {
+        id: 5,
+        title: "Romeo & Juliet",
+        src: "/Romeo&Juliet-4.jpg",
+        alt: "Romeo & Juliet",
       },
-      c: {
-        id: 3,
-        title: "Singfeld, 2023",
-        src: "/singfeld_1.jpg",
-        alt: "Singfeld, 2023",
-      },
-    },
-  },
-  {
-    id: 3,
-    title: "Other",
-    photos: {
-      a: {
-        id: 1,
-        title: "The Pillowman",
-        src: "/pillowman_1.jpg",
-        alt: "The Pillowman",
-      },
-      b: {
-        id: 2,
-        title: "The Pillowman",
-        src: "/pillowman_2.jpg",
-        alt: "The Pillowman",
-      },
-      c: {
-        id: 3,
-        title: "The Pillowman",
-        src: "/Pillowman_3.jpg",
-        alt: "The Pillowman",
+      f: {
+        id: 6,
+        title: "Romeo & Juliet",
+        src: "/Romeo&Juliet-5.jpg",
+        alt: "Romeo & Juliet",
       },
     },
   },
@@ -189,6 +177,14 @@ const buttons: Buttons[] = [
     id: 3,
     title: "Macavity",
   },
+  {
+    id: 4,
+    title: "Romeo & Juliet",
+  },
+  {
+    id: 5,
+    title: "Macavity (on-stage)",
+  },
 ];
 
 const videos: Videos[] = [
@@ -204,6 +200,16 @@ const videos: Videos[] = [
   },
   {
     id: 3,
+    src: "https://www.youtube.com/embed/yombw1LuHfk?si=n9fPEr9cq0eB-N2D",
+    alt: "Macavity",
+  },
+  {
+    id: 4,
+    src: "https://www.youtube.com/embed/zCCSe9orCTg?si=-FszI56cSdtu-LNS",
+    alt: "Romeo & Juliet",
+  },
+  {
+    id: 5,
     src: "https://www.youtube.com/embed/yombw1LuHfk?si=n9fPEr9cq0eB-N2D",
     alt: "Macavity",
   },
@@ -238,6 +244,14 @@ export default function Page() {
     source = videos[2].src;
     title = videos[2].alt;
     id = videos[2].id;
+  } else if (rendered == 4) {
+    source = videos[3].src;
+    title = videos[3].alt;
+    id = videos[3].id;
+  } else if (rendered == 5) {
+    source = videos[4].src;
+    title = videos[4].alt;
+    id = videos[4].id;
   } else {
     console.log("Something went wrong.");
   }
@@ -267,7 +281,7 @@ export default function Page() {
   // ***RENDERED***
   return (
     <div className="lg:w-9/12 mx-8 sm:mx-auto sm:px-8 pt-16 md:pt-48 mb-20 md:mb-32">
-      <div className="flex flex-col mt-5">
+      <div className="flex flex-col">
         {/* Videos section */}
         <div className="flex flex-col justify-center content-center mb-10">
           <motion.h1
@@ -302,14 +316,14 @@ export default function Page() {
               {/* {video} */}
             </motion.div>
           </div>
-          <div className="flex flex-col place-self-center sm:grid sm:grid-cols-3 mt-10 lg:mx-10 w-full">
+          <div className="flex flex-col place-self-center sm:grid sm:grid-cols-2 gap-6 mt-10 lg:mx-10 w-3/4">
             {buttons.map((button) => {
               return (
                 <button
                   key={button.id}
                   value={button.id}
                   onClick={handleClick}
-                  className={`rounded-[var(--rounded-tiny)] text-md md:text-lg text-[var(--light-text-color)] hover:bg-[var(--light-text-transparent)] hover:text-[var(--dark-text-color)] border-[var(--light-text-color)] border-2 p-2 m-2 md:m-4 w-3/4 place-self-center h-full`}
+                  className={`rounded-[var(--rounded-tiny)] text-md md:text-lg text-[var(--light-text-color)] hover:bg-[var(--light-text-transparent)] hover:text-[var(--accent-color)] border-[var(--light-text-color)] hover:border-[var(--accent-color)] border-2 p-2 m-2 md:m-4 w-full place-self-center h-full`}
                   style={{ transition: "all 300ms ease-in-out" }}
                 >
                   {button.title}
@@ -337,7 +351,7 @@ export default function Page() {
         {/* map through each show, with photos from each show. I can either create new interfaces with photos nested into shows. I don't know another good option. */}
         {shows.map((show) => {
           return (
-            <div className="w-full md:w-3/4 flex flex-col self-center">
+            <div className="w-full md:w-3/4 flex flex-col self-center pb-12">
               <motion.h2
                 className="text-[2rem] py-4 flex"
                 initial="hide"

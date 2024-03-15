@@ -56,7 +56,7 @@ export default function ImageSlideshow(props: Props) {
         onSwiper={setThumbsSwiper}
         loop={true}
         spaceBetween={12}
-        slidesPerView={4}
+        slidesPerView={6}
         freeMode={true}
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}
