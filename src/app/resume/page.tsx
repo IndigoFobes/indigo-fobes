@@ -93,7 +93,7 @@ export default function Page() {
           <div>headshots</div> */}
             {headshots.map((item) => {
               return (
-                <Link href={item.src} download target={"_blank"}>
+                <Link key={item.id} href={item.src} download target={"_blank"}>
                   <div className="relative">
                     <Image
                       src={item.src}

@@ -8,22 +8,27 @@ const menuItems: MenuItem[] = [
   {
     title: "Home",
     route: "/",
+    id: 0,
   },
   {
     title: "About",
     route: "/about",
+    id: 1,
   },
   {
     title: "Headshot + Resume",
     route: "/resume",
+    id: 2,
   },
   {
     title: "Media",
     route: "/media",
+    id: 3,
   },
   {
     title: "Contact",
     route: "/#contact",
+    id: 4,
   },
 ];
 
@@ -71,7 +76,7 @@ export default function MobileDropdown() {
           >
             {menuItems.map((item) => {
               return (
-                <Link href={item?.route || ""} onClick={toggle}>
+                <Link key={item.id} href={item?.route || ""} onClick={toggle}>
                   {item.title}
                 </Link>
               );

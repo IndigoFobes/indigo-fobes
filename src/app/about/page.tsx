@@ -142,7 +142,7 @@ export default function Page() {
             style={{ transition: "opacity 300ms ease-in-out" }}
           >
             <h3 className="p-3 text-[1rem] text-white">
-              Pre-show. Feelin' jazzed for the Jellicle Ball of course.
+              {`Pre-show. Feelin' jazzed for the Jellicle Ball of course.`}
             </h3>
           </div>
         </div>
@@ -158,8 +158,8 @@ export default function Page() {
             style={{ transition: "opacity 300ms ease-in-out" }}
           >
             <h3 className="p-3 text-[1rem] text-white">
-              Just chilling by the pool in Florida, at my husband's
-              grandparents' best friends' house.
+              {`Just chilling by the pool in Florida, at my husband's
+              grandparents' best friends' house.`}
             </h3>
           </div>
         </div>

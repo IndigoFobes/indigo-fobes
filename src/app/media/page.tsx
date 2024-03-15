@@ -345,7 +345,10 @@ export default function Page() {
         {/* map through each show, with photos from each show. I can either create new interfaces with photos nested into shows. I don't know another good option. */}
         {shows.map((show) => {
           return (
-            <div className="w-full md:w-3/4 flex flex-col self-center pb-12">
+            <div
+              key={show.id}
+              className="w-full md:w-3/4 flex flex-col self-center pb-12"
+            >
               <motion.h2
                 className="text-[2rem] py-4 flex"
                 initial="hide"

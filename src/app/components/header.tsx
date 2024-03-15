@@ -19,6 +19,7 @@ import { link } from "fs";
 export interface MenuItem {
   title: string;
   route?: string;
+  id: number;
   children?: MenuItem[];
 }
 
@@ -26,22 +27,27 @@ const menuItems: MenuItem[] = [
   {
     title: "Home",
     route: "/",
+    id: 0,
   },
   {
     title: "About",
     route: "/about",
+    id: 1,
   },
   {
     title: "Headshot + Resume",
     route: "/resume",
+    id: 2,
   },
   {
     title: "Media",
     route: "/media",
+    id: 3,
   },
   {
     title: "Contact",
     route: "/#contact",
+    id: 4,
   },
 ];
 
@@ -66,6 +72,7 @@ export default function Header() {
           {menuItems.map((item) => {
             return (
               <Link
+                key={item.id}
                 className={`relative hover:text-[var(--accent-color)] place-self-center link-no-dec ${
                   item.route === path ? `` : `hover-underline-animation`
                 }`}
