@@ -358,7 +358,10 @@ export default function Page() {
               {/* <BootstrapCarousel show={show} key={show.id} /> */}
               <ImageSlideshow show={show} key={show.id} />
               <Link href={show.source} target="_blank">
-                <p className="pt-1 hover:text-[var(--accent-color)]">
+                <p
+                  className="pt-1 hover:text-[var(--accent-color)]"
+                  style={{ transition: "all 300ms ease-in-out" }}
+                >
                   {show.credit}
                 </p>
               </Link>

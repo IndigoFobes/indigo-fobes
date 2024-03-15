@@ -323,7 +323,7 @@ export default function Home() {
                 {/* instagram */}
                 <div className="pb-3">
                   <Link
-                    href={" https://www.instagram.com/jacob.millman/"}
+                    href={" https://www.instagram.com/indigofobes/"}
                     target={"_blank"}
                     className={"text-3xl flex flex-row"}
                   >
@@ -336,7 +336,7 @@ export default function Home() {
                 {/* actors access */}
                 <div className="pb-8 flex flex-row">
                   <Link
-                    href={"https://resumes.actorsaccess.com/jacobmillman"}
+                    href={"https://resumes.actorsaccess.com/indigofobes"}
                     target={"_blank"}
                     className={"flex flex-row"}
                   >

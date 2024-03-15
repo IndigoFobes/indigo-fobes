@@ -1,5 +1,6 @@
 import { Icon } from "next/dist/lib/metadata/types/metadata-types";
 import Link from "next/link";
+import Image from "next/image";
 import { Component } from "react";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 
@@ -39,10 +40,22 @@ export default function Footer() {
               </Link>
             );
           })} */}
-          <Link href={"https://www.facebook.com/"} target={"_blank"}>
-            <FaFacebook />
+          <Link
+            href={"https://resumes.actorsaccess.com/indigofobes"}
+            target={"_blank"}
+          >
+            <Image
+              src={"/actors_access-blue.png"}
+              alt={"Actors Access Icon"}
+              width={30}
+              height={30}
+              className={"mr-2 hidden md:flex"}
+            ></Image>
           </Link>
-          <Link href={"https://www.instagram.com/"} target={"_blank"}>
+          <Link
+            href={"https://www.instagram.com/indigofobes"}
+            target={"_blank"}
+          >
             <FaInstagram />
           </Link>
         </div>
