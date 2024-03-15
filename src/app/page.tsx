@@ -185,7 +185,7 @@ export default function Home() {
       {/* Quote section */}
       <div className="bg-[var(--dark-theme-color)] p-8 md:p-10">
         <p className="font-mono text-[var(--light-text-color)] text-center lg:mx-20 my-5 verse">
-          {`"Whatever is true, noble, right, pure, lovely, admirable – if anything is excellent or praiseworthy – think about such things."`}
+          {`"Whatever is true, noble, right, pure, lovely, admirable – if anything is excellent or praiseworthy – think about such things!"`}
           <br></br>
           <span className=" ">{`Philippians 4:8`}</span>
         </p>
