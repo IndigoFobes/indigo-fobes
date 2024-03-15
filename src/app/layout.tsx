@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   title: "Indigo Fobes",
   description: "NYC based actor, singer, dancer.",
   icons: {
-    icon: "/icon.png",
+    icon: "/favicon.ico",
   },
 };
 
