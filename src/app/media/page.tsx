@@ -1,6 +1,7 @@
 "use client";
 import Header from "../components/header";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState, useEffect } from "react";
 // // import "bootstrap/dist/css/bootstrap.min.css";
 // import BootstrapCarousel from "../components/carousel";
@@ -58,6 +59,8 @@ export interface Photos {
 export interface Shows {
   id: number;
   title: string;
+  credit: string;
+  source: string;
   photos: {
     [key: string]: Photos;
   };
@@ -81,6 +84,8 @@ const shows: Shows[] = [
   {
     id: 0,
     title: "Cats",
+    credit: "City Springs Theatre Company, Ben Rose Photography",
+    source: "https://proofs.benrosephotography.com/",
     photos: {
       a: {
         id: 1,
@@ -123,6 +128,8 @@ const shows: Shows[] = [
   {
     id: 1,
     title: "Romeo & Juliet",
+    credit: "REV Theatre Company, On Tour",
+    source: "https://therevtheatre.com/education/sequential-dramatics/",
     photos: {
       a: {
         id: 1,
@@ -181,10 +188,6 @@ const buttons: Buttons[] = [
     id: 4,
     title: "Romeo & Juliet",
   },
-  {
-    id: 5,
-    title: "Macavity (on-stage)",
-  },
 ];
 
 const videos: Videos[] = [
@@ -207,11 +210,6 @@ const videos: Videos[] = [
     id: 4,
     src: "https://www.youtube.com/embed/zCCSe9orCTg?si=-FszI56cSdtu-LNS",
     alt: "Romeo & Juliet",
-  },
-  {
-    id: 5,
-    src: "https://www.youtube.com/embed/yombw1LuHfk?si=n9fPEr9cq0eB-N2D",
-    alt: "Macavity",
   },
 ];
 
@@ -248,10 +246,6 @@ export default function Page() {
     source = videos[3].src;
     title = videos[3].alt;
     id = videos[3].id;
-  } else if (rendered == 5) {
-    source = videos[4].src;
-    title = videos[4].alt;
-    id = videos[4].id;
   } else {
     console.log("Something went wrong.");
   }
@@ -363,6 +357,11 @@ export default function Page() {
               </motion.h2>
               {/* <BootstrapCarousel show={show} key={show.id} /> */}
               <ImageSlideshow show={show} key={show.id} />
+              <Link href={show.source} target="_blank">
+                <p className="pt-1 hover:text-[var(--accent-color)]">
+                  {show.credit}
+                </p>
+              </Link>
             </div>
           );
         })}
